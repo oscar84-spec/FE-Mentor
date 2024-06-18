@@ -9,4 +9,4 @@
 - Mobile-first workflow
 - Responsive Design
 
-![](/assets/images/avatar-jessica.jpeg)
+![](/assets/images/social_link.png)
