@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              fondo: "#141414",
+              white: "#FCFCFC",
+              letraAccent: "#C5F82A",
+              darkGrey: "#1F1F1F",
+              greyLink: "#333333",
+            },
+            fontFamily: {
+              bold: ["Title", "sans-serif"],
+              semibold: ["Semibold", "serif"],
+              regular: ["Regular", "serif"],
+            },
+            screens: {
+              xs: "375px",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      @font-face {
+        font-family: "Title";
+        src: url(assets/fonts/static/Inter-Bold.ttf);
+      }
+      @font-face {
+        font-family: "Semibold";
+        src: url(assets/fonts/static/Inter-SemiBold.ttf);
+      }
+      @font-face {
+        font-family: "Regular";
+        src: url(assets/fonts/static/Inter-Regular.ttf);
+      }
+    </style>
+    <title>Frontend Mentor | Social links profile</title>
+  </head>
+  <body class="h-screen bg-fondo flex justify-center items-center">
+    <div
+      class="bg-darkGrey rounded-xl p-5 w-72 flex flex-col items-center xs:w-80"
+    >
+      <div class="flex flex-col items-center">
+        <div class="w-20 rounded-full">
+          <img
+            src="assets/images/avatar-jessica.jpeg"
+            alt="avatar-jessica"
+            class="rounded-full"
+            loading="lazy"
+          />
+        </div>
+        <h2 class="text-white font-semibold mt-4 text-xl">Jessica Randall</h2>
+        <span class="text-xs font-semibold text-letraAccent mt-2"
+          >London, United Kingdom</span
+        >
+      </div>
+      <span class="text-center mt-4 text-xs text-white font-regular"
+        >"Front-end developer and avid reader."</span
+      >
+      <ul class="mt-5 h-72 w-full lg:h-max">
+        <li
+          class="bg-greyLink mt-5 py-2 text-center rounded-md text-white font-regular text-sm xl:hover:text-letraAccent py-3"
+        >
+          GitHub
+        </li>
+        <li
+          class="bg-greyLink mt-5 py-2 text-center rounded-md text-white font-regular text-sm xl:hover:text-letraAccent py-3"
+        >
+          Frontend Mentor
+        </li>
+        <li
+          class="bg-greyLink mt-5 py-2 text-center rounded-md text-white font-regular text-sm xl:hover:text-letraAccent py-3"
+        >
+          LinkedIn
+        </li>
+        <li
+          class="bg-greyLink mt-5 py-2 text-center rounded-md text-white font-regular text-sm xl:hover:text-letraAccent py-3"
+        >
+          Twitter
+        </li>
+        <li
+          class="bg-greyLink mt-5 py-2 text-center rounded-md text-white font-regular text-sm xl:hover:text-letraAccent py-3"
+        >
+          Instagram
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
