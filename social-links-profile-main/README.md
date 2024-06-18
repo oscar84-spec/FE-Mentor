@@ -9,4 +9,6 @@
 - Mobile-first workflow
 - Responsive Design
 
-![](/assets/images/social_link.png)
+Aquí una captura de pantalla:
+
+![screenshot](./assets/images/social_link.png)
