@@ -1,5 +1,3 @@
-# Author: Oscar Hernández
-
 # Frontend Mentor - Social links profile
 
 ## Built with
@@ -12,3 +10,5 @@
 Aquí una captura de pantalla:
 
 ![screenshot](./assets/images/social_link.png)
+
+Author: Oscar Hernández
