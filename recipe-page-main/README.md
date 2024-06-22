@@ -14,5 +14,5 @@ donde ponemos en práctica y nos concentramos en la semántica del HTML.
 
 ### Contact me:
 
-- ![Linkedin](https://www.linkedin.com/in/oscar-hdz202/)
-- ![Porfolio](https://portafolio-ebon-kappa.vercel.app/)
+- [Linkedin](https://www.linkedin.com/in/oscar-hdz202/)
+- [Porfolio](https://portafolio-ebon-kappa.vercel.app/)

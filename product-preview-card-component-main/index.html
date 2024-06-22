@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="tailwind.js"></script>
+
+    <title>Frontend Mentor | Product preview card component</title>
+  </head>
+  <body>
+    <section
+      class="w-full h-screen p-5 bg-cream xs:p-7 sm:flex justify-center items-center"
+    >
+      <div
+        class="w-[280px] h-[550px] bg-white rounded-lg xs:w-[319px] md:flex md:w-[600px] md:h-[500px]"
+      >
+        <div
+          class="w-full h-[200px] bg-mobile bg-cover bg-no-repeat bg-center rounded-t-lg md:bg-desktop md:w-[50%] md:h-full md:rounded-tl-lg md:rounded-tr-none md:rounded-bl-lg"
+        ></div>
+        <div class="flex flex-col md:w-1/2">
+          <span
+            class="p-4 font-primary text-sm text-grayishBlue uppercase tracking-[0.2em] xs:tracking-[0.3em] md:mt-6 md:text-md"
+            >Perfume</span
+          >
+          <div class="px-4">
+            <h1
+              class="font-secondary font-bold text-2xl text-darkBlue xs:text-3xl md:mt-4 md:text-4xl"
+            >
+              Gabrielle Essence Eau De Parfum
+            </h1>
+            <p
+              class="mt-4 font-primary text-sm text-grayishBlue leading-6 md:mt-7 md:text-md"
+            >
+              A floral, solar and voluptuous interpretation composed by Olivier
+              Polge, Perfumer-Creator for the House of CHANEL.
+            </p>
+          </div>
+          <div class="px-4">
+            <div class="flex items-center gap-3 mt-3 md:mt-7">
+              <span
+                class="font-secondary font-bold text-2xl text-darkCyan xs:text-3xl"
+                >$149.99</span
+              >
+              <span class="font-primary text-sm text-grayishBlue line-through"
+                >$169.99</span
+              >
+            </div>
+            <button
+              type="button"
+              class="flex justify-center items-center gap-3 mt-2 p-3 w-full bg-darkCyan rounded-md font-primary font-bold text-sm text-white md:mt-7 lg:hover:bg-teal-700"
+            >
+              <li class="list-none">
+                <img src="/images/icon-cart.svg" alt="icon-cart" />
+              </li>
+              Add to Cart
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
