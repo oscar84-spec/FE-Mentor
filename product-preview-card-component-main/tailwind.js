@@ -16,8 +16,8 @@ tailwind.config = {
         xs: "375px",
       },
       backgroundImage: {
-        mobile: "url('/images/image-product-mobile.jpg')",
-        desktop: "url('/images/image-product-desktop.jpg')",
+        mobile: "url('images/image-product-mobile.jpg')",
+        desktop: "url('images/image-product-desktop.jpg')",
       },
     },
   },
