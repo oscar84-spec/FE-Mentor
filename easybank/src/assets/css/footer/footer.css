@@ -1,0 +1,116 @@
+.footer {
+  background-color: var(--darkBlue);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+}
+.footer__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.footer__social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.footer__social-logo {
+  width: 120px;
+  background: url(/images/logo-white.svg) center / contain no-repeat;
+  height: 50px;
+}
+.footer__icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.svg {
+  width: 30px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+}
+.footer__btn-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.footer__right {
+  font: 14px "Public Sans";
+  color: var(--grayishblue);
+}
+@media only screen and (min-width: 768px) {
+  .footer {
+    height: 250px;
+    margin-top: 50px;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 50px;
+  }
+  .footer__social {
+    width: 200px;
+    gap: 20px;
+  }
+  .footer__contact {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+  }
+  .footer-contact {
+    height: 80px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .footer__right {
+    text-align: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .footer__social-logo {
+    width: 150px;
+  }
+  .footer__contact {
+    width: 500px;
+    height: 150px;
+  }
+  .footer__social {
+    gap: 50px;
+  }
+  svg:hover {
+    cursor: pointer;
+  }
+  svg > path:hover {
+    fill: var(--limeGreen);
+    transition: all ease-in-out 0.3s;
+  }
+}
+@media only screen and (min-width: 1244px) {
+  .footer {
+    height: max-content;
+    padding: 20px 50px;
+  }
+  .footer__contact {
+    justify-content: space-between;
+    width: 700px;
+    margin-left: 25px;
+  }
+  .footer__social {
+    align-items: flex-start;
+  }
+  .footer__list {
+    width: 300px;
+  }
+  .footer__btn-container {
+    width: 400px;
+    align-items: flex-end;
+  }
+  .footer__right {
+    font-size: 16px;
+  }
+}

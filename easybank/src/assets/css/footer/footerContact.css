@@ -1,0 +1,22 @@
+.footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+
+  height: 150px;
+}
+.footer-contact__list {
+  font: 14px "Public Sans";
+  color: var(--white);
+}
+@media only screen and (min-width: 768px) {
+  .footer-contact {
+    height: 100px;
+  }
+  .footer-contact__list:hover {
+    color: var(--limeGreen);
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+  }
+}

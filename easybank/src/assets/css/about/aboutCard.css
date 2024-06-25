@@ -1,0 +1,34 @@
+.container__card {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+.container__card-title {
+  font: 1.5rem "Public Sans";
+  color: var(--darkBlue);
+}
+.container__card-description {
+  font: 1rem "Public Sans";
+  text-align: center;
+  color: var(--grayishblue);
+}
+@media only screen and (min-width: 375px) {
+  .container__card-description {
+    line-height: 1.5em;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .container__card {
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container__card {
+    align-items: flex-start;
+    gap: 30px;
+  }
+  .container__card-description {
+    text-align: start;
+  }
+}

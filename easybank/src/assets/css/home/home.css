@@ -1,0 +1,140 @@
+.home {
+  background-color: var(--white);
+  height: 100vh;
+}
+.home__container {
+  height: calc(100% - 50px);
+  display: flex;
+  flex-direction: column;
+}
+.home__container-bgMockups {
+  height: 275px;
+  overflow: hidden;
+  position: relative;
+}
+.home__container-bgDesktop {
+  display: none;
+}
+.home__container-bgMobile {
+  position: absolute;
+  top: -100px;
+}
+.home__container-bgMockup {
+  position: absolute;
+  width: 280px;
+  top: -100px;
+  left: 20px;
+}
+.home__container-description {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  padding: 0 20px;
+}
+.home__container-description-title {
+  font: 2rem "Public Sans";
+  color: var(--darkBlue);
+  text-align: center;
+}
+.home__container-description-description {
+  font: 14px "Public Sans";
+  color: var(--grayishblue);
+  text-align: center;
+  line-height: 1.2rem;
+}
+@media only screen and (min-width: 375px) {
+  .home__container-bgMockups {
+    height: 300px;
+  }
+  .home__container-bgMobile {
+    top: -80px;
+  }
+  .home__container-bgMockup {
+    width: 335px;
+    top: -120px;
+  }
+}
+@media only screen and (min-width: 425px) {
+  .home__container-bgMobile {
+    width: 100%;
+  }
+  .home__container-bgMockup {
+    left: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .home {
+    height: 100vh;
+  }
+  .home__container {
+    flex-direction: row-reverse;
+  }
+  .home__container-bgMockups {
+    height: 100%;
+    width: 50%;
+  }
+  .home__container-bgMobile {
+    height: 100%;
+  }
+  .home__container-description {
+    width: 50%;
+  }
+  .home__container-description {
+    justify-content: center;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .home {
+    height: 100vh;
+  }
+  .home__container-bgMockups {
+    height: 100%;
+  }
+  .home__container-bgMobile {
+    display: none;
+  }
+  .home__container-bgDesktop {
+    display: block;
+    position: absolute;
+    left: -50px;
+    top: -230px;
+    width: 200%;
+  }
+  .home__container-bgMockup {
+    width: 100%;
+    top: -150px;
+  }
+  .home__container-description {
+    align-items: flex-start;
+  }
+  .home__container-description-title {
+    margin-left: 50px;
+    text-align: start;
+    font-size: 3rem;
+  }
+  .home__container-description-description {
+    margin-left: 50px;
+    text-align: start;
+    font-size: 1rem;
+  }
+}
+@media only screen and (min-width: 1244px) {
+  .home__container {
+    height: calc(100vh - 70px);
+  }
+  .home__container-bgMockups {
+    height: 100%;
+  }
+  .home__container-bgDesktop {
+    width: 150%;
+  }
+  .home__container-bgMockup {
+    left: 100px;
+    top: -200px;
+  }
+  .home__container-description-description {
+    font-size: 1.3rem;
+    line-height: normal;
+  }
+}

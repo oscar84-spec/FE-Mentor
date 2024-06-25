@@ -1,0 +1,36 @@
+.container__article-card {
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: var(--white);
+}
+.container__article-info {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.container__article-legend {
+  font: 14px "Public Sans";
+  color: var(--grayishblue);
+}
+.container__article-subtitle {
+  font: 18px "Public Sans";
+  color: var(--darkBlue);
+}
+.container__article-description {
+  font: 15px "Public Sans";
+  color: var(--grayishblue);
+}
+@media only screen and (min-width: 768px) {
+  .container__article-card {
+    width: 250px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .container__article-subtitle:hover {
+    color: var(--limeGreen);
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+  }
+}

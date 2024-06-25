@@ -1,0 +1,38 @@
+.btn--display {
+  display: none;
+}
+.btn {
+  font: 500 14px "Public Sans";
+  border: none;
+  padding: 10px 30px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, var(--limeGreen), var(--brightCyan));
+  color: var(--white);
+  cursor: pointer;
+}
+@media only screen and (min-width: 1024px) {
+  .btn--display {
+    display: block;
+  }
+  .btn {
+    font: 500 14px "Public Sans";
+    border: none;
+    padding: 10px 40px;
+    border-radius: 30px;
+    background: linear-gradient(90deg, var(--limeGreen), var(--brightCyan));
+    color: var(--white);
+    cursor: pointer;
+  }
+  .margin {
+    margin-left: 50px;
+  }
+  .btn:hover {
+    opacity: 0.7;
+    transition: all ease-in-out 0.3s;
+  }
+}
+@media only screen and (min-width: 1244px) {
+  .btn {
+    padding: 15px 40px;
+  }
+}
