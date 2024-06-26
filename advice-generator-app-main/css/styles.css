@@ -1,0 +1,79 @@
+:root {
+  --lightCyan: hsl(193, 38%, 86%);
+  --neonGreen: hsl(150, 100%, 66%);
+  --grayishBlue: hsl(217, 19%, 38%);
+  --darkGrayishBlue: hsl(217, 19%, 24%);
+  --darkBlue: hsl(218, 23%, 16%);
+}
+*,
+::before,
+::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+.advice {
+  height: 100vh;
+  background-color: var(--darkBlue);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.advice__container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  background-color: var(--darkGrayishBlue);
+  padding: 10px 10px 50px 10px;
+  position: relative;
+}
+.advice__id {
+  font: 800 16px "Manrope";
+  text-transform: uppercase;
+  color: var(--neonGreen);
+  letter-spacing: 0.3em;
+}
+.advice__advice {
+  font: 800 22px "Manrope";
+  text-align: center;
+  color: var(--lightCyan);
+}
+.advice__divider-desktop {
+  display: none;
+}
+.advice__icon-dice {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--neonGreen);
+}
+@media only screen and (min-width: 375px) {
+  .advice__container {
+    width: 350px;
+    padding: 20px 20px 60px 20px;
+    border-radius: 10px;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .advice__container {
+    width: 500px;
+    padding: 30px 30px 70px 30px;
+  }
+  .advice__divider-desktop {
+    display: block;
+  }
+  .advice__divider-mobile {
+    display: none;
+  }
+  .advice__icon-dice:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 3px var(--neonGreen);
+    transition: all ease-in-out 0.5s;
+  }
+}
