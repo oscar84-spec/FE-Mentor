@@ -4,12 +4,12 @@ Esta es la solución al reto [Testimonials grid section challenge on Frontend Me
 
 ### Captura de pantalla
 
-![](./images/testimonial.png.jpg)
+![](./images/testimonial.png)
 
 ### Enlaces
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solución](https://github.com/oscar84-spec/FE-Mentor/tree/master/testiomonios-grid)
+- Live Site URL: [Live](https://oscar84-spec.github.io/FE-Mentor/testiomonios-grid/)
 
 ### Hecho con:
 
