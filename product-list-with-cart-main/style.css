@@ -1,0 +1,277 @@
+:root {
+  --red: hsl(14, 86%, 42%);
+  --green: hsl(159, 69%, 38%);
+  --rose50: hsl(20, 50%, 98%);
+  --rose100: hsl(13, 31%, 94%);
+  --rose300: hsl(14, 25%, 72%);
+  --rose400: hsl(7, 20%, 60%);
+  --rose500: hsl(12, 20%, 44%);
+  --rose900: hsl(14, 65%, 9%);
+}
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.dessert {
+  height: max-content;
+  padding: 15px 20px;
+  background-color: var(--rose100);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dessert__products {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dessert__products--title {
+  font: 700 2.5rem "Red Hat Text", sans-serif;
+  color: var(--rose900);
+}
+.dessert__products--product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.dessert__product--img-container {
+  position: relative;
+}
+.dessert__product--img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: 7px;
+}
+.dessert__product--btn {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--rose300);
+  outline: none;
+  font: 600 0.875rem "Red Hat Text", sans-serif;
+  color: var(--rose900);
+}
+.dessert__product--info {
+  margin-top: 15px;
+}
+.dessert__product--title {
+  font: 400 0.875rem "Red Hat Text", sans-serif;
+  color: var(--rose500);
+}
+
+.dessert__product--description {
+  font: 600 1rem "Red Hat Text", sans-serif;
+  color: var(--rose900);
+}
+.dessert__price {
+  font: 600 1rem "Red Hat Text", sans-serif;
+  color: var(--rose500);
+}
+
+.dessert__cart {
+  background-color: var(--rose50);
+  border-radius: 7px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 50px;
+}
+.dessert__cart__title {
+  font: 700 1.5rem "Red Hat Text", sans-serif;
+  color: var(--red);
+}
+.dessert__cart__container {
+  padding: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-height: 300px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: var(--rose300) var(--rose100);
+  hr {
+    border: var(--rose100) 1px solid;
+  }
+}
+.dessert__cart__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dessert__cart__item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.dessert__cart__item-name {
+  font: 600 0.875rem "Red Hat Text", sans-serif;
+  color: var(--rose900);
+}
+.dessert__cart__item-quantity {
+  display: flex;
+  gap: 1.5rem;
+}
+.dessert__cart__item-quantity-number {
+  font: 600 0.875rem "Red Hat Text", sans-serif;
+  color: var(--red);
+}
+.dessert__cart__item-price-lighter-text {
+  font: 400 0.875rem "Red Hat Text", sans-serif;
+  color: var(--rose400);
+}
+.dessert__cart__item-price {
+  font: 600 0.875rem "Red Hat Text", sans-serif;
+  color: var(--rose500);
+}
+.dessert__cart__item-remove {
+  border: var(--rose500) solid 1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.dessert__cart__total {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+.dessert__cart__total-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dessert__cart__total-label {
+  font: 400 0.875rem "Red Hat Text", sans-serif;
+  color: var(--rose900);
+}
+.dessert__cart__total-amount {
+  font: 700 1.5rem "Red Hat Text", sans-serif;
+  color: var(--rose900);
+}
+.dessert__cart__carbon-neutral {
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--rose100);
+  border-radius: 3px;
+  font: 400 0.875rem "Red Hat Text", sans-serif;
+  color: var(--rose900);
+}
+.dessert__cart__carbon-neutral-label {
+  font-weight: 600;
+}
+.dessert__cart__confirm-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  height: 50px;
+  border-radius: 200px;
+  font: 600 1rem "Red Hat Text", sans-serif;
+  color: var(--rose50);
+  background-color: var(--red);
+}
+.quanty {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid var(--rose300);
+  outline: none;
+  background-color: var(--red);
+  font: 600 1rem "Red Hat Text", sans-serif;
+  color: var(--rose50);
+  padding: 0 10px;
+  opacity: 0;
+  z-index: -1;
+  transition: opacity 0.5s ease-in-out;
+  img {
+    width: 17px;
+    height: 17px;
+    padding: 2px;
+    border: var(--rose50) solid 1px;
+    border-radius: 50%;
+  }
+}
+.increment:active {
+  background-color: var(--rose50);
+}
+@media screen and (min-width: 768px) {
+  .dessert {
+    padding: 15px 40px;
+  }
+  .dessert__products {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .dessert__products--product {
+    width: 200px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .dessert {
+    padding: 50px;
+  }
+  .dessert__products--container {
+    display: flex;
+  }
+  .dessert__cart {
+    margin-top: 0;
+    height: max-content;
+  }
+  .dessert__products {
+    width: 700px;
+  }
+  .dessert__products--title {
+    margin-bottom: 20px;
+  }
+  .dessert__product--btn:hover {
+    cursor: pointer;
+  }
+  .dessert__cart__confirm-btn:hover {
+    cursor: pointer;
+  }
+  .increment:hover {
+    cursor: pointer;
+  }
+  .decrement:hover {
+    cursor: pointer;
+  }
+}
+@media screen and (min-width: 1244px) {
+  .dessert {
+    padding: 50px 100px;
+  }
+  .dessert__cart {
+    width: 400px;
+  }
+}

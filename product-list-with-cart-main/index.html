@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <title>Frontend Mentor | Product list with cart</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="dessert">
+      <div class="dessert__products--container">
+        <div>
+          <h1 class="dessert__products--title">Desserts</h1>
+          <div class="dessert__products"></div>
+        </div>
+        <div class="dessert__cart">
+          <h2 class="dessert__cart__title">Your Cart (7)</h2>
+          <div class="dessert__cart__container">
+            <div class="dessert__cart__item">
+              <div class="dessert__cart__item-info">
+                <h2 class="dessert__cart__item-name">Chocolate Cake</h2>
+                <div class="dessert__cart__item-quantity">
+                  <span class="dessert__cart__item-quantity-number">1x</span>
+                  <span class="dessert__cart__item-price-lighter-text"
+                    >@ $5.50
+                    <span class="dessert__cart__item-price">$5.50</span></span
+                  >
+                </div>
+              </div>
+              <span class="dessert__cart__item-remove">
+                <img
+                  src="./assets/images/icon-remove-item.svg"
+                  alt="Remove item"
+                />
+              </span>
+            </div>
+            <hr />
+            <div class="dessert__cart__item">
+              <div class="dessert__cart__item-info">
+                <h2 class="dessert__cart__item-name">Chocolate Cake</h2>
+                <div class="dessert__cart__item-quantity">
+                  <span class="dessert__cart__item-quantity-number">1x</span>
+                  <span class="dessert__cart__item-price-lighter-text"
+                    >@ $5.50
+                    <span class="dessert__cart__item-price">$5.50</span></span
+                  >
+                </div>
+              </div>
+              <span class="dessert__cart__item-remove">
+                <img
+                  src="./assets/images/icon-remove-item.svg"
+                  alt="Remove item"
+                />
+              </span>
+            </div>
+            <hr />
+            <div class="dessert__cart__item">
+              <div class="dessert__cart__item-info">
+                <h2 class="dessert__cart__item-name">Chocolate Cake</h2>
+                <div class="dessert__cart__item-quantity">
+                  <span class="dessert__cart__item-quantity-number">1x</span>
+                  <span class="dessert__cart__item-price-lighter-text"
+                    >@ $5.50
+                    <span class="dessert__cart__item-price">$5.50</span></span
+                  >
+                </div>
+              </div>
+              <span class="dessert__cart__item-remove">
+                <img
+                  src="./assets/images/icon-remove-item.svg"
+                  alt="Remove item"
+                />
+              </span>
+            </div>
+            <hr />
+            <div class="dessert__cart__item">
+              <div class="dessert__cart__item-info">
+                <h2 class="dessert__cart__item-name">Chocolate Cake</h2>
+                <div class="dessert__cart__item-quantity">
+                  <span class="dessert__cart__item-quantity-number">1x</span>
+                  <span class="dessert__cart__item-price-lighter-text"
+                    >@ $5.50
+                    <span class="dessert__cart__item-price">$5.50</span></span
+                  >
+                </div>
+              </div>
+              <span class="dessert__cart__item-remove">
+                <img
+                  src="./assets/images/icon-remove-item.svg"
+                  alt="Remove item"
+                />
+              </span>
+            </div>
+            <hr />
+            <div class="dessert__cart__item">
+              <div class="dessert__cart__item-info">
+                <h2 class="dessert__cart__item-name">Chocolate Cake</h2>
+                <div class="dessert__cart__item-quantity">
+                  <span class="dessert__cart__item-quantity-number">1x</span>
+                  <span class="dessert__cart__item-price-lighter-text"
+                    >@ $5.50
+                    <span class="dessert__cart__item-price">$5.50</span></span
+                  >
+                </div>
+              </div>
+              <span class="dessert__cart__item-remove">
+                <img
+                  src="./assets/images/icon-remove-item.svg"
+                  alt="Remove item"
+                />
+              </span>
+            </div>
+            <hr />
+          </div>
+          <div class="dessert__cart__total">
+            <div class="dessert__cart__total-info">
+              <span class="dessert__cart__total-label">Order Total</span>
+              <span class="dessert__cart__total-amount">$5.50</span>
+            </div>
+            <span class="dessert__cart__carbon-neutral">
+              <img
+                src="./assets/images/icon-carbon-neutral.svg"
+                alt="Carbon Neutral"
+              />
+              This is a
+              <span class="dessert__cart__carbon-neutral-label"
+                >carbon-neutral</span
+              >
+              delivery
+            </span>
+          </div>
+          <button type="button" class="dessert__cart__confirm-btn">
+            Confirm Order
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
